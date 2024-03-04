@@ -3,40 +3,68 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Wolfram 14.1' *)
+(* CreatedBy='Mathematica 14.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[       154,          7]
-NotebookDataLength[     29687,        671]
-NotebookOptionsPosition[     27332,        621]
-NotebookOutlinePosition[     27728,        637]
-CellTagsIndexPosition[     27685,        634]
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     78984,       1818]
+NotebookOptionsPosition[     72741,       1704]
+NotebookOutlinePosition[     73137,       1720]
+CellTagsIndexPosition[     73094,       1717]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData["Quit"], "Input",
- CellChangeTimes->{{3.9181384702503443`*^9, 3.918138470698126*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"ef668a9a-5000-401b-b60e-e8ff718309e0"],
+
+Cell[CellGroupData[{
+Cell["Simple \[OpenCurlyDoubleQuote]point\[CloseCurlyDoubleQuote] library", \
+"Title",
+ CellChangeTimes->{{3.918561303460734*^9, 
+  3.918561309975293*^9}},ExpressionUUID->"df67a117-7541-4742-96b3-\
+0c261f4856df"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"square", "=", 
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"ParentDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.918560866195207*^9, 3.918560874190699*^9}, {
+  3.918561054874606*^9, 3.91856105983805*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"bec5555a-67fb-44e0-bf20-cc9fa3e6636e"],
+
+Cell[BoxData["\<\"/Users/arnoudb/ForeignFunctionExamples\"\>"], "Output",
+ CellChangeTimes->{3.918560874733162*^9, 3.9185610601319733`*^9, 
+  3.918562963347767*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"ddc98348-2e30-4bfa-8189-75246a55af46"]
+}, Open  ]],
+
+Cell["Add two points:", "Text",
+ CellChangeTimes->{{3.918564369355658*^9, 
+  3.918564374871338*^9}},ExpressionUUID->"f4767426-5a62-4f3b-b8b4-\
+40703ea2d900"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"add", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
-   RowBox[{"\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<square\>\"", ",", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<add\>\"", ",", 
     RowBox[{
-     RowBox[{"{", "\"\<Real64\>\"", "}"}], "\[Rule]", "\"\<Real64\>\""}]}], 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.918137616784612*^9, 3.9181376748767843`*^9}, {
-  3.918138160696133*^9, 3.918138163503132*^9}, {3.918138427808153*^9, 
-  3.918138433154883*^9}, {3.918138499263684*^9, 3.918138505230665*^9}, {
-  3.918138686691978*^9, 3.91813869230319*^9}, {3.918299516848114*^9, 
-  3.918299521969763*^9}},
- CellLabel->"In[18]:=",ExpressionUUID->"afcd9c80-533b-425c-96a7-ccd09f7789d9"],
+ CellChangeTimes->{{3.918564349268868*^9, 3.918564352737274*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"21e9a834-aa66-45c9-8d60-829c2315e403"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -62,14 +90,25 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"name: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"square\"", "SummaryItem"]}]}, {
+                 TagBox["\"add\"", "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"type: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
                   RowBox[{
-                    RowBox[{"{", "\"Real64\"", "}"}], "\[Rule]", 
-                    "\"Real64\""}], "SummaryItem"]}]}}, 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -98,18 +137,31 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"name: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"square\"", "SummaryItem"]}]}, {
+                 TagBox["\"add\"", "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"type: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
                   RowBox[{
-                    RowBox[{"{", "\"Real64\"", "}"}], "\[Rule]", 
-                    "\"Real64\""}], "SummaryItem"]}]}, {
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -126,54 +178,382 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/point.dylib", "square", 
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "add", 
    DataStructure[
    "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4809047720], 
-     "Type" -> ({"Real64"} -> "Real64")}]],
+    "FunctionPointer" -> OpaqueRawPointer[4801690596], "Type" -> ({
+        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
+        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
+      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{{3.918137652449581*^9, 3.918137675174712*^9}, 
-   3.918138163867495*^9, 3.918138241935932*^9, {3.918138433589782*^9, 
-   3.9181384380351467`*^9}, {3.9181384804118757`*^9, 3.918138505609404*^9}, {
-   3.918138678166178*^9, 3.918138709924026*^9}, 3.918138868573384*^9, {
-   3.918299081915766*^9, 3.918299103270233*^9}, 3.91829924432977*^9, 
-   3.918299405997032*^9, 3.9182995235399017`*^9, 3.91829958113078*^9, 
-   3.918300809533681*^9, 3.9183030334956617`*^9},
- CellLabel->"Out[18]=",ExpressionUUID->"18685a2d-f056-4662-9c45-c697ee5324ca"]
+ CellChangeTimes->{3.918564354026252*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"380a2090-60a6-444f-a9b8-4421da28d60a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"square", "[", "4.2", "]"}]], "Input",
- CellChangeTimes->{{3.918137669987365*^9, 3.918137670593985*^9}, {
-   3.918138167101267*^9, 3.918138187607356*^9}, {3.9181382447033854`*^9, 
-   3.918138246073401*^9}, {3.918138441463966*^9, 3.918138451859549*^9}, {
-   3.918138506635891*^9, 3.918138508265195*^9}, {3.9181387276408873`*^9, 
-   3.918138735162956*^9}, 3.918299107307625*^9, {3.91829952679045*^9, 
-   3.9182995269443808`*^9}},
- CellLabel->"In[19]:=",ExpressionUUID->"8580cfba-1729-487b-aa80-e96f0885bb90"],
+ RowBox[{"add", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "7"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.918564354661026*^9, 3.918564362515856*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"52227032-6871-48c9-a625-5475e6f5b83e"],
 
-Cell[BoxData["17.64`"], "Output",
- CellChangeTimes->{{3.918137670908676*^9, 3.918137675900066*^9}, {
-   3.918138164772224*^9, 3.918138187839057*^9}, {3.918138242734967*^9, 
-   3.918138246663268*^9}, {3.918138434631909*^9, 3.918138452031872*^9}, 
-   3.918138508757818*^9, {3.918138679269149*^9, 3.9181387370368423`*^9}, 
-   3.9181388725207853`*^9, 3.9182991075801487`*^9, 3.918299246102646*^9, 
-   3.918299407023518*^9, {3.918299524636368*^9, 3.91829952713848*^9}, 
-   3.9182995856624413`*^9, 3.918300809854456*^9, 3.918303035016366*^9},
- CellLabel->"Out[19]=",ExpressionUUID->"f5073d2e-c5a6-4545-ad34-3af597e7a536"]
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"7.`", ",", "10.`"}], "}"}]], "Output",
+ CellChangeTimes->{3.918564362873988*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"ff9b7070-9470-484d-a7e7-a10a4c0f570d"]
 }, Open  ]],
+
+Cell["Subtract two points:", "Text",
+ CellChangeTimes->{{3.918564378312516*^9, 
+  3.918564385272374*^9}},ExpressionUUID->"e928e180-852a-460e-bde6-\
+26521974a7ca"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"subtract", "=", 
+  RowBox[{"ForeignFunctionLoad", "[", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<subtract\>\"", ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9185644058081627`*^9, 3.918564411429943*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"3043372a-dd28-4f59-99ac-0bfa9c16e4bf"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ForeignFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"subtract\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"subtract\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "subtract", 
+   DataStructure[
+   "RawForeignFunction", {
+    "FunctionPointer" -> OpaqueRawPointer[4801690664], "Type" -> ({
+        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
+        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
+      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.918564412019971*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"08fd3dbc-fc32-4fd2-ba19-a02921528241"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"subtract", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"5", ",", "7"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.918564397044106*^9, 3.918564420014471*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"af24c983-e1ce-40a1-82cc-930aa998565b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"3.`", ",", "4.`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.918564412983519*^9, 3.918564420668901*^9}},
+ CellLabel->"Out[32]=",ExpressionUUID->"2d1e6f2a-3e9a-4382-99d6-a68ea5b09eb5"]
+}, Open  ]],
+
+Cell["Scale a point by a factor:", "Text",
+ CellChangeTimes->{{3.918564465992482*^9, 
+  3.918564470147834*^9}},ExpressionUUID->"cac3e515-b95f-4fea-874a-\
+bd36000ef667"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"scale", "=", 
+  RowBox[{"ForeignFunctionLoad", "[", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<scale\>\"", ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
+       "\"\<Real64\>\""}], "}"}], "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9185644439976807`*^9, 3.918564454019568*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"c960b3e5-54a9-4250-b3e1-370361b7ce93"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ForeignFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"scale\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    "\"Real64\""}], "}"}], "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"scale\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    "\"Real64\""}], "}"}], "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "scale", 
+   DataStructure[
+   "RawForeignFunction", {
+    "FunctionPointer" -> OpaqueRawPointer[4801690732], "Type" -> ({
+        TypeSpecifier["ListTuple"]["Real64", "Real64"], "Real64"} -> 
+      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.918564454616425*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"951fae02-b123-48ad-a168-0a707c89922a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"scale", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"3", ",", "4"}], "}"}], ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9185644557795677`*^9, 3.9185644584413548`*^9}},
+ CellLabel->"In[34]:=",ExpressionUUID->"8ae6f8c9-4ca7-4643-b07d-6dab12290499"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"6.`", ",", "8.`"}], "}"}]], "Output",
+ CellChangeTimes->{3.918564458679287*^9},
+ CellLabel->"Out[34]=",ExpressionUUID->"b9ad4b57-ee22-4a36-ac09-3031dc1879e0"]
+}, Open  ]],
+
+Cell["Compute the distance between two points:", "Text",
+ CellChangeTimes->{{3.9185635727103786`*^9, 3.9185635774436483`*^9}, {
+  3.9185644980124197`*^9, 
+  3.918564500439865*^9}},ExpressionUUID->"15c1a4f0-99e2-491e-a69c-\
+3258f7b28eb6"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"distance", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
-   RowBox[{
-   "\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<distance\>\"", ",", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<distance\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
@@ -183,9 +563,9 @@ Cell[BoxData[
         RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], 
      "\[Rule]", "\"\<Real64\>\""}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.918299159489606*^9, 3.918299180702124*^9}, {
-  3.9182992385328703`*^9, 3.918299241696148*^9}, {3.918299531390029*^9, 
-  3.918299544583302*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
+  3.918299238532871*^9, 3.918299241696148*^9}, {3.918299531390029*^9, 
+  3.918299544583302*^9}, {3.9185612330925083`*^9, 3.918561233839891*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -272,7 +652,9 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -289,19 +671,22 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/point.dylib", "distance", 
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "distance", 
    DataStructure[
    "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4809047748], "Type" -> ({
+    "FunctionPointer" -> OpaqueRawPointer[4801690332], "Type" -> ({
         TypeSpecifier["ListTuple"]["Real64", "Real64"], 
         TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> "Real64")}]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{{3.9182991679049788`*^9, 3.9182991815015583`*^9}, 
+ CellChangeTimes->{{3.918299167904979*^9, 3.9182991815015583`*^9}, 
    3.918299248149634*^9, 3.918299408617529*^9, 3.918299544991254*^9, 
-   3.918299586538293*^9, 3.9183008108708572`*^9, 3.918303055715489*^9},
- CellLabel->"Out[20]=",ExpressionUUID->"22df28d9-9600-46d7-b13f-bbee9810c421"]
+   3.918299586538293*^9, 3.9183008108708572`*^9, 3.918303055715489*^9, 
+   3.9185612358332233`*^9, 3.9185629722438297`*^9, 3.9185635593185873`*^9, 
+   3.918564481827695*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"ab273631-fb1a-4ab3-b154-34f6f1963a62"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -310,45 +695,41 @@ Cell[BoxData[
  RowBox[{"distance", "[", 
   RowBox[{
    RowBox[{"{", 
-    RowBox[{"2", ",", "2"}], "}"}], ",", 
+    RowBox[{"1", ",", "1"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"3", ",", "3"}], "}"}]}], "]"}]], "Input",
+    RowBox[{"4", ",", "5"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.91829916968701*^9, 3.9182991739515877`*^9}, {
-  3.918299253356166*^9, 3.9182992593928537`*^9}},
- CellLabel->"In[21]:=",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
+  3.918299253356166*^9, 3.918299259392854*^9}, {3.918563564030858*^9, 
+  3.9185635676928587`*^9}, {3.918564523718822*^9, 3.918564526750815*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
 
-Cell[BoxData["1.4142135623730951`"], "Output",
+Cell[BoxData["5.`"], "Output",
  CellChangeTimes->{3.9182991742509823`*^9, 3.918299251132971*^9, 
   3.918299409431737*^9, 3.918299546836718*^9, 3.918299587512335*^9, 
-  3.9183008119853973`*^9, 3.918303056450131*^9},
- CellLabel->"Out[21]=",ExpressionUUID->"bc83ff7c-9470-4c84-8297-0d4a901b46d0"]
+  3.918300811985398*^9, 3.918303056450131*^9, 3.918561237490841*^9, 
+  3.918562976122237*^9, 3.918563567924193*^9, 3.9185645269492683`*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"b69cbf29-b568-4cbf-8c60-4f6211a9af18"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Directory", "[", "]"}]], "Input",
- CellChangeTimes->{{3.918300843860787*^9, 3.918300845965877*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"1929e150-a7b1-4e9f-ac17-5c12969c3a86"],
-
-Cell[BoxData["\<\"/Users/arnoudb\"\>"], "Output",
- CellChangeTimes->{3.918300846261662*^9},
- CellLabel->"Out[6]=",ExpressionUUID->"104a34f3-9343-4693-a33b-51d180583914"]
-}, Open  ]],
+Cell["Compute the norm of a point:", "Text",
+ CellChangeTimes->{{3.918564532448051*^9, 
+  3.918564536692553*^9}},ExpressionUUID->"971fdf71-d06b-4265-a25d-\
+a32d272acb4a"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"norm", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
-   RowBox[{"\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<norm\>\"", ",", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<norm\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"{", 
        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], "}"}], "->", 
      "\"\<Real64\>\""}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.918300829961851*^9, 3.918300880041003*^9}},
- CellLabel->"In[9]:=",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
+ CellChangeTimes->{{3.918300829961851*^9, 3.918300880041003*^9}, {
+  3.918561242767956*^9, 3.918561245894396*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -427,7 +808,9 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -444,16 +827,18 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/point.dylib", "norm", 
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "norm", 
    DataStructure[
    "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4809047840], "Type" -> ({
+    "FunctionPointer" -> OpaqueRawPointer[4801690424], "Type" -> ({
         TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> "Real64")}]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{{3.918300836329649*^9, 3.9183008803330317`*^9}},
- CellLabel->"Out[9]=",ExpressionUUID->"365bd0d6-ebbc-408b-a131-9447fdec6687"]
+ CellChangeTimes->{{3.918300836329649*^9, 3.9183008803330317`*^9}, 
+   3.918561246605747*^9, 3.9185629853742657`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"089c4c54-2bfa-4b3b-8539-4ad127212486"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -461,21 +846,28 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"norm", "[", 
   RowBox[{"{", 
-   RowBox[{"2", ",", "2"}], "}"}], "]"}]], "Input",
- CellChangeTimes->{{3.9183008617138453`*^9, 3.918300869283001*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
+   RowBox[{"3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9183008617138453`*^9, 3.918300869283001*^9}, {
+  3.918564509920225*^9, 3.9185645100738277`*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
 
-Cell[BoxData["2.8284271247461903`"], "Output",
- CellChangeTimes->{{3.91830086991719*^9, 3.918300881006831*^9}},
- CellLabel->"Out[10]=",ExpressionUUID->"26b16cd8-7b05-41f8-a4dd-227eb5b1ac1c"]
+Cell[BoxData["5.`"], "Output",
+ CellChangeTimes->{{3.91830086991719*^9, 3.918300881006831*^9}, 
+   3.918562986188971*^9, {3.918564510732609*^9, 3.9185645289295197`*^9}},
+ CellLabel->"Out[38]=",ExpressionUUID->"5cbfdfb3-f1b1-4477-821b-ae48d73c3e0c"]
 }, Open  ]],
+
+Cell["Compute the dot product of two points:", "Text",
+ CellChangeTimes->{{3.918564570963973*^9, 
+  3.918564581604375*^9}},ExpressionUUID->"5ed12b0e-f0a7-43e5-a0a4-\
+f77affd234c5"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"dot", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
-   RowBox[{"\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<dot\>\"", ",", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<dot\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
@@ -484,8 +876,9 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], 
      "->", "\"\<Real64\>\""}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.9183008989693213`*^9, 3.918300917010476*^9}},
- CellLabel->"In[11]:=",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
+ CellChangeTimes->{{3.9183008989693217`*^9, 3.918300917010476*^9}, {
+  3.918561257663917*^9, 3.918561258508628*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -572,7 +965,9 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -589,17 +984,19 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/point.dylib", "dot", 
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "dot", 
    DataStructure[
    "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4809047908], "Type" -> ({
+    "FunctionPointer" -> OpaqueRawPointer[4801690492], "Type" -> ({
         TypeSpecifier["ListTuple"]["Real64", "Real64"], 
         TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> "Real64")}]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918300917346493*^9},
- CellLabel->"Out[11]=",ExpressionUUID->"ac357261-9ea8-49ad-800b-eb00921ae86b"]
+ CellChangeTimes->{3.918300917346493*^9, 3.918561258897223*^9, 
+  3.9185629897664127`*^9, 3.9185645420317173`*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"99f8cacb-315f-4055-9cf9-b2e7548653a0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -608,15 +1005,701 @@ Cell[BoxData[
  RowBox[{"dot", "[", 
   RowBox[{
    RowBox[{"{", 
-    RowBox[{"2", ",", "2"}], "}"}], ",", 
+    RowBox[{"3", ",", "4"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"3", ",", "3"}], "}"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.918300918386117*^9, 3.918300921576642*^9}},
- CellLabel->"In[12]:=",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
+    RowBox[{
+     RowBox[{"-", "3"}], ",", "4"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.918300918386117*^9, 3.918300921576642*^9}, {
+  3.918564548286787*^9, 3.918564565305579*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
 
-Cell[BoxData["12.`"], "Output",
- CellChangeTimes->{3.918300921932797*^9},
- CellLabel->"Out[12]=",ExpressionUUID->"7860265b-7cb9-4974-abfc-36b88fb2f114"]
+Cell[BoxData["7.`"], "Output",
+ CellChangeTimes->{
+  3.918300921932797*^9, 3.918561260745677*^9, 3.918562990741366*^9, {
+   3.918564542693136*^9, 3.918564565501088*^9}},
+ CellLabel->"Out[41]=",ExpressionUUID->"682d4cc3-c1f2-4249-b017-6faeb8ea17c4"]
+}, Open  ]],
+
+Cell["Normalize a point to unit length:", "Text",
+ CellChangeTimes->{{3.9185647081438093`*^9, 
+  3.9185647145095987`*^9}},ExpressionUUID->"a0548dce-60d3-4ead-9f71-\
+02641b7b9e2d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"normalize", "=", 
+  RowBox[{"ForeignFunctionLoad", "[", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<normalize\>\"", ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], "}"}], "->", 
+     
+     RowBox[{"{", 
+      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.918564605224956*^9, 3.918564614929367*^9}, {
+  3.91856464535385*^9, 3.9185646706425867`*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"145d2f7a-d9f7-4500-9a57-9d526df84c5c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ForeignFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"normalize\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"normalize\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "normalize", 
+   DataStructure[
+   "RawForeignFunction", {
+    "FunctionPointer" -> OpaqueRawPointer[4801690796], "Type" -> ({
+        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
+      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.918564616217805*^9, 3.9185646711980658`*^9}},
+ CellLabel->"Out[47]=",ExpressionUUID->"0e04e603-3b84-4a6d-af9b-7515b5914e0a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"normalize", "[", 
+  RowBox[{"{", 
+   RowBox[{"3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.918564617358143*^9, 3.918564619472535*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"2e59f69e-0b60-4899-8875-a4cb76093818"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.6000000000000001`", ",", "0.8`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.918564619867532*^9, 3.918564672949595*^9}},
+ CellLabel->"Out[48]=",ExpressionUUID->"5798f501-6791-4e07-b006-b3d12657e55b"]
+}, Open  ]],
+
+Cell["Rotate a point by an angle:", "Text",
+ CellChangeTimes->{{3.918564727532733*^9, 
+  3.918564736297825*^9}},ExpressionUUID->"5c9805c5-5960-4abb-9aec-\
+d16abbe4d004"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"rotate", "=", 
+  RowBox[{"ForeignFunctionLoad", "[", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<rotate\>\"", ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
+       "\"\<Real64\>\""}], "}"}], "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9185647409288597`*^9, 3.918564752767089*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"7aa3d446-00c1-4706-9ce7-48de915bee73"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ForeignFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"rotate\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    "\"Real64\""}], "}"}], "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"rotate\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    "\"Real64\""}], "}"}], "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "rotate", 
+   DataStructure[
+   "RawForeignFunction", {
+    "FunctionPointer" -> OpaqueRawPointer[4801690976], "Type" -> ({
+        TypeSpecifier["ListTuple"]["Real64", "Real64"], "Real64"} -> 
+      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.918564753442011*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"21ebd958-f0d7-4ac2-a3b3-add35c59bcf6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"rotate", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0"}], "}"}], ",", 
+   RowBox[{"\[Pi]", "/", "4."}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.918564754393935*^9, 3.91856476405064*^9}},
+ CellLabel->"In[52]:=",ExpressionUUID->"22d580c3-4034-49fa-80a5-0e5ee4f6f71a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.7071067811865476`", ",", "0.7071067811865475`"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.918564761524455*^9, 3.918564764379425*^9}},
+ CellLabel->"Out[52]=",ExpressionUUID->"c154e85b-beac-4936-92b1-bb6ebc4cf2c6"]
+}, Open  ]],
+
+Cell["Reflect a point about a normal:", "Text",
+ CellChangeTimes->{{3.918564780912983*^9, 
+  3.9185647864762993`*^9}},ExpressionUUID->"ee16f56f-2ee4-46dd-98c4-\
+2493a47770d9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"reflect", "=", 
+  RowBox[{"ForeignFunctionLoad", "[", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<reflect\>\"", ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.918564797159787*^9, 3.918564808804729*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"35555350-9142-4eb0-9937-f9f416c85456"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ForeignFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"reflect\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"reflect\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "reflect", 
+   DataStructure[
+   "RawForeignFunction", {
+    "FunctionPointer" -> OpaqueRawPointer[4801691148], "Type" -> ({
+        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
+        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
+      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.918564809473859*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"76861c77-3831-47ea-ac98-990d19364c98"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"reflect", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.7071067811865476`", ",", "0.7071067811865475`"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.918564810238101*^9, 3.9185648395577927`*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"40102816-ef57-473c-ba53-bd568a89e659"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "2.220446049250313`*^-16"}], ",", 
+   RowBox[{"-", "1.`"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9185648219477262`*^9, 3.918564840099043*^9}},
+ CellLabel->"Out[57]=",ExpressionUUID->"0d29f3c4-7c04-48bb-b868-c289ecc42527"]
+}, Open  ]],
+
+Cell["Project a point onto a normal:", "Text",
+ CellChangeTimes->{{3.9185648520676403`*^9, 
+  3.918564864670023*^9}},ExpressionUUID->"847dc46a-b479-4413-8852-\
+eea6fd689d18"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"project", "=", 
+  RowBox[{"ForeignFunctionLoad", "[", 
+   RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<project\>\"", ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.918564868548409*^9, 3.918564872024259*^9}},
+ CellLabel->"In[58]:=",ExpressionUUID->"7d926e75-39a0-4559-b323-3a4ac13329c9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ForeignFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"project\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"project\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
+                     "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"/Users/arnoudb/ForeignFunctionExamples/build/point.dylib\"\
+", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ForeignFunction[
+  "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "project", 
+   DataStructure[
+   "RawForeignFunction", {
+    "FunctionPointer" -> OpaqueRawPointer[4801691276], "Type" -> ({
+        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
+        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
+      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.918564872409026*^9},
+ CellLabel->"Out[58]=",ExpressionUUID->"1dd80722-f27a-4681-ba39-dbb87c68e31d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"project", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"3", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.918564873304585*^9, 3.918564891834907*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"966f972c-6b57-47b0-bbc7-a4f3c3ad834f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"3.`", ",", "0.`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.918564884001996*^9, 3.918564892047948*^9}},
+ CellLabel->"Out[60]=",ExpressionUUID->"335bc928-ea35-4ab1-b8b8-fa7108a68a77"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"project", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"3", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.918564873304585*^9, 3.9185649023432913`*^9}},
+ CellLabel->"In[61]:=",ExpressionUUID->"de4aa7e4-e96e-41c4-a01d-23caa763741c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.`", ",", "4.`"}], "}"}]], "Output",
+ CellChangeTimes->{3.918564902553587*^9},
+ CellLabel->"Out[61]=",ExpressionUUID->"28643028-5c4a-49d5-832a-2101d048eb5e"]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1440, 847},
@@ -636,42 +1719,106 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[554, 20, 176, 2, 30, "Input",ExpressionUUID->"ef668a9a-5000-401b-b60e-e8ff718309e0"],
 Cell[CellGroupData[{
-Cell[755, 26, 654, 12, 30, "Input",ExpressionUUID->"afcd9c80-533b-425c-96a7-ccd09f7789d9"],
-Cell[1412, 40, 4934, 103, 61, "Output",ExpressionUUID->"18685a2d-f056-4662-9c45-c697ee5324ca"]
+Cell[580, 22, 212, 4, 98, "Title",ExpressionUUID->"df67a117-7541-4742-96b3-0c261f4856df"],
+Cell[CellGroupData[{
+Cell[817, 30, 340, 6, 30, "Input",ExpressionUUID->"bec5555a-67fb-44e0-bf20-cc9fa3e6636e"],
+Cell[1160, 38, 243, 3, 34, "Output",ExpressionUUID->"ddc98348-2e30-4bfa-8189-75246a55af46"]
+}, Open  ]],
+Cell[1418, 44, 157, 3, 35, "Text",ExpressionUUID->"f4767426-5a62-4f3b-b8b4-40703ea2d900"],
+Cell[CellGroupData[{
+Cell[1600, 51, 640, 15, 30, "Input",ExpressionUUID->"21e9a834-aa66-45c9-8d60-829c2315e403"],
+Cell[2243, 68, 5851, 124, 61, "Output",ExpressionUUID->"380a2090-60a6-444f-a9b8-4421da28d60a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6383, 148, 529, 8, 30, "Input",ExpressionUUID->"8580cfba-1729-487b-aa80-e96f0885bb90"],
-Cell[6915, 158, 615, 8, 34, "Output",ExpressionUUID->"f5073d2e-c5a6-4545-ad34-3af597e7a536"]
+Cell[8131, 197, 322, 8, 30, "Input",ExpressionUUID->"52227032-6871-48c9-a625-5475e6f5b83e"],
+Cell[8456, 207, 199, 4, 34, "Output",ExpressionUUID->"ff9b7070-9470-484d-a7e7-a10a4c0f570d"]
+}, Open  ]],
+Cell[8670, 214, 162, 3, 35, "Text",ExpressionUUID->"e928e180-852a-460e-bde6-26521974a7ca"],
+Cell[CellGroupData[{
+Cell[8857, 221, 652, 15, 30, "Input",ExpressionUUID->"3043372a-dd28-4f59-99ac-0bfa9c16e4bf"],
+Cell[9512, 238, 5866, 124, 61, "Output",ExpressionUUID->"08fd3dbc-fc32-4fd2-ba19-a02921528241"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7567, 171, 701, 16, 30, "Input",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
-Cell[8271, 189, 5536, 114, 61, "Output",ExpressionUUID->"22df28d9-9600-46d7-b13f-bbee9810c421"]
+Cell[15415, 367, 327, 8, 30, "Input",ExpressionUUID->"af24c983-e1ce-40a1-82cc-930aa998565b"],
+Cell[15745, 377, 222, 4, 34, "Output",ExpressionUUID->"2d1e6f2a-3e9a-4382-99d6-a68ea5b09eb5"]
+}, Open  ]],
+Cell[15982, 384, 168, 3, 35, "Text",ExpressionUUID->"cac3e515-b95f-4fea-874a-bd36000ef667"],
+Cell[CellGroupData[{
+Cell[16175, 391, 584, 14, 30, "Input",ExpressionUUID->"c960b3e5-54a9-4250-b3e1-370361b7ce93"],
+Cell[16762, 407, 5478, 117, 61, "Output",ExpressionUUID->"951fae02-b123-48ad-a168-0a707c89922a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13844, 308, 379, 9, 30, "Input",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
-Cell[14226, 319, 309, 4, 34, "Output",ExpressionUUID->"bc83ff7c-9470-4c84-8297-0d4a901b46d0"]
+Cell[22277, 529, 279, 6, 30, "Input",ExpressionUUID->"8ae6f8c9-4ca7-4643-b07d-6dab12290499"],
+Cell[22559, 537, 198, 4, 34, "Output",ExpressionUUID->"b9ad4b57-ee22-4a36-ac09-3031dc1879e0"]
+}, Open  ]],
+Cell[22772, 544, 237, 4, 35, "Text",ExpressionUUID->"15c1a4f0-99e2-491e-a69c-3258f7b28eb6"],
+Cell[CellGroupData[{
+Cell[23034, 552, 737, 15, 30, "Input",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
+Cell[23774, 569, 5721, 119, 61, "Output",ExpressionUUID->"ab273631-fb1a-4ab3-b154-34f6f1963a62"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14572, 328, 201, 3, 30, "Input",ExpressionUUID->"1929e150-a7b1-4e9f-ac17-5c12969c3a86"],
-Cell[14776, 333, 169, 2, 34, "Output",ExpressionUUID->"104a34f3-9343-4693-a33b-51d180583914"]
+Cell[29532, 693, 474, 10, 30, "Input",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
+Cell[30009, 705, 384, 5, 34, "Output",ExpressionUUID->"b69cbf29-b568-4cbf-8c60-4f6211a9af18"]
+}, Open  ]],
+Cell[30408, 713, 170, 3, 35, "Text",ExpressionUUID->"971fdf71-d06b-4265-a25d-a32d272acb4a"],
+Cell[CellGroupData[{
+Cell[30603, 720, 515, 11, 30, "Input",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
+Cell[31121, 733, 5026, 107, 61, "Output",ExpressionUUID->"089c4c54-2bfa-4b3b-8539-4ad127212486"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14982, 340, 471, 10, 30, "Input",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
-Cell[15456, 352, 4890, 103, 61, "Output",ExpressionUUID->"365bd0d6-ebbc-408b-a131-9447fdec6687"]
+Cell[36184, 845, 302, 6, 30, "Input",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
+Cell[36489, 853, 248, 3, 34, "Output",ExpressionUUID->"5cbfdfb3-f1b1-4477-821b-ae48d73c3e0c"]
+}, Open  ]],
+Cell[36752, 859, 180, 3, 35, "Text",ExpressionUUID->"5ed12b0e-f0a7-43e5-a0a4-f77affd234c5"],
+Cell[CellGroupData[{
+Cell[36957, 866, 627, 14, 30, "Input",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
+Cell[37587, 882, 5509, 116, 61, "Output",ExpressionUUID->"99f8cacb-315f-4055-9cf9-b2e7548653a0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20383, 460, 251, 5, 30, "Input",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
-Cell[20637, 467, 190, 2, 34, "Output",ExpressionUUID->"26b16cd8-7b05-41f8-a4dd-227eb5b1ac1c"]
+Cell[43133, 1003, 392, 10, 30, "Input",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
+Cell[43528, 1015, 248, 4, 34, "Output",ExpressionUUID->"682d4cc3-c1f2-4249-b017-6faeb8ea17c4"]
+}, Open  ]],
+Cell[43791, 1022, 179, 3, 35, "Text",ExpressionUUID->"a0548dce-60d3-4ead-9f71-02641b7b9e2d"],
+Cell[CellGroupData[{
+Cell[43995, 1029, 596, 14, 30, "Input",ExpressionUUID->"145d2f7a-d9f7-4500-9a57-9d526df84c5c"],
+Cell[44594, 1045, 5406, 115, 61, "Output",ExpressionUUID->"0e04e603-3b84-4a6d-af9b-7515b5914e0a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20864, 474, 584, 13, 30, "Input",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
-Cell[21451, 489, 5351, 112, 61, "Output",ExpressionUUID->"ac357261-9ea8-49ad-800b-eb00921ae86b"]
+Cell[50037, 1165, 254, 5, 30, "Input",ExpressionUUID->"2e59f69e-0b60-4899-8875-a4cb76093818"],
+Cell[50294, 1172, 239, 4, 34, "Output",ExpressionUUID->"5798f501-6791-4e07-b006-b3d12657e55b"]
+}, Open  ]],
+Cell[50548, 1179, 169, 3, 35, "Text",ExpressionUUID->"5c9805c5-5960-4abb-9aec-d16abbe4d004"],
+Cell[CellGroupData[{
+Cell[50742, 1186, 586, 14, 30, "Input",ExpressionUUID->"7aa3d446-00c1-4706-9ce7-48de915bee73"],
+Cell[51331, 1202, 5481, 117, 61, "Output",ExpressionUUID->"21ebd958-f0d7-4ac2-a3b3-add35c59bcf6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26839, 606, 322, 8, 30, "Input",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
-Cell[27164, 616, 152, 2, 34, "Output",ExpressionUUID->"7860265b-7cb9-4974-abfc-36b88fb2f114"]
+Cell[56849, 1324, 304, 7, 30, "Input",ExpressionUUID->"22d580c3-4034-49fa-80a5-0e5ee4f6f71a"],
+Cell[57156, 1333, 257, 5, 34, "Output",ExpressionUUID->"c154e85b-beac-4936-92b1-bb6ebc4cf2c6"]
+}, Open  ]],
+Cell[57428, 1341, 175, 3, 35, "Text",ExpressionUUID->"ee16f56f-2ee4-46dd-98c4-2493a47770d9"],
+Cell[CellGroupData[{
+Cell[57628, 1348, 648, 15, 30, "Input",ExpressionUUID->"35555350-9142-4eb0-9937-f9f416c85456"],
+Cell[58279, 1365, 5863, 124, 61, "Output",ExpressionUUID->"76861c77-3831-47ea-ac98-990d19364c98"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[64179, 1494, 367, 9, 30, "Input",ExpressionUUID->"40102816-ef57-473c-ba53-bd568a89e659"],
+Cell[64549, 1505, 282, 6, 37, "Output",ExpressionUUID->"0d29f3c4-7c04-48bb-b868-c289ecc42527"]
+}, Open  ]],
+Cell[64846, 1514, 174, 3, 35, "Text",ExpressionUUID->"847dc46a-b479-4413-8852-eea6fd689d18"],
+Cell[CellGroupData[{
+Cell[65045, 1521, 648, 15, 30, "Input",ExpressionUUID->"7d926e75-39a0-4559-b323-3a4ac13329c9"],
+Cell[65696, 1538, 5863, 124, 61, "Output",ExpressionUUID->"1dd80722-f27a-4681-ba39-dbb87c68e31d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[71596, 1667, 326, 8, 30, "Input",ExpressionUUID->"966f972c-6b57-47b0-bbc7-a4f3c3ad834f"],
+Cell[71925, 1677, 222, 4, 34, "Output",ExpressionUUID->"335bc928-ea35-4ab1-b8b8-fa7108a68a77"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72184, 1686, 328, 8, 30, "Input",ExpressionUUID->"de4aa7e4-e96e-41c4-a01d-23caa763741c"],
+Cell[72515, 1696, 198, 4, 34, "Output",ExpressionUUID->"28643028-5c4a-49d5-832a-2101d048eb5e"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
