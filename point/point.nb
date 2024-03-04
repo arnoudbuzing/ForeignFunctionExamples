@@ -27,7 +27,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"square", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
-   RowBox[{"\"\</Users/arnoudb/test.dylib\>\"", ",", "\"\<square\>\"", ",", 
+   RowBox[{"\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<square\>\"", ",", 
     RowBox[{
      RowBox[{"{", "\"\<Real64\>\"", "}"}], "\[Rule]", "\"\<Real64\>\""}]}], 
    "]"}]}]], "Input",
@@ -109,7 +109,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/test.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -126,7 +126,7 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/test.dylib", "square", 
+  ForeignFunction["/Users/arnoudb/point.dylib", "square", 
    DataStructure[
    "RawForeignFunction", {
     "FunctionPointer" -> OpaqueRawPointer[4809047720], 
@@ -173,7 +173,7 @@ Cell[BoxData[
  RowBox[{"distance", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
    RowBox[{
-   "\"\</Users/arnoudb/test.dylib\>\"", ",", "\"\<distance\>\"", ",", 
+   "\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<distance\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
@@ -272,7 +272,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/test.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -289,7 +289,7 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/test.dylib", "distance", 
+  ForeignFunction["/Users/arnoudb/point.dylib", "distance", 
    DataStructure[
    "RawForeignFunction", {
     "FunctionPointer" -> OpaqueRawPointer[4809047748], "Type" -> ({
@@ -341,7 +341,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"norm", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
-   RowBox[{"\"\</Users/arnoudb/test.dylib\>\"", ",", "\"\<norm\>\"", ",", 
+   RowBox[{"\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<norm\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"{", 
@@ -427,7 +427,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/test.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -444,7 +444,7 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/test.dylib", "norm", 
+  ForeignFunction["/Users/arnoudb/point.dylib", "norm", 
    DataStructure[
    "RawForeignFunction", {
     "FunctionPointer" -> OpaqueRawPointer[4809047840], "Type" -> ({
@@ -475,7 +475,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"dot", "=", 
   RowBox[{"ForeignFunctionLoad", "[", 
-   RowBox[{"\"\</Users/arnoudb/test.dylib\>\"", ",", "\"\<dot\>\"", ",", 
+   RowBox[{"\"\</Users/arnoudb/point.dylib\>\"", ",", "\"\<dot\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
@@ -572,7 +572,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"/Users/arnoudb/test.dylib\"", "SummaryItem"]}]}}, 
+                 TagBox["\"/Users/arnoudb/point.dylib\"", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -589,7 +589,7 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ForeignFunction["/Users/arnoudb/test.dylib", "dot", 
+  ForeignFunction["/Users/arnoudb/point.dylib", "dot", 
    DataStructure[
    "RawForeignFunction", {
     "FunctionPointer" -> OpaqueRawPointer[4809047908], "Type" -> ({

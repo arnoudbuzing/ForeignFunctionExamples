@@ -1,5 +1,5 @@
 VerificationTest[
-    square = ForeignFunctionLoad["./test.dylib", "square", {"Real64"} -> "Real64"]
+    square = ForeignFunctionLoad["./point.dylib", "square", {"Real64"} -> "Real64"]
     ,
     _ForeignFunction
     ,
@@ -19,7 +19,7 @@ VerificationTest[
 ]
 
 VerificationTest[
-    distance = ForeignFunctionLoad["./test.dylib", "distance", {"Real64", "Real64"} -> "Real64"]
+    distance = ForeignFunctionLoad["./point.dylib", "distance", {"Real64", "Real64"} -> "Real64"]
     ,
     _ForeignFunction
     ,
