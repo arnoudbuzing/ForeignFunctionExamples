@@ -1,0 +1,62 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "value": "1",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>1</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      }
+     ],
+     "id": "30386ac7-0355-4fac-8614-1b8dd4fe7f97"
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1709331001346,
+     "endTime": 1709331001354
+    },
+    "executionOrder": 1,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "Sin[1.2]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>0.932039</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      }
+     ],
+     "id": "47e45a95-e840-42bd-a513-82417e232afa"
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1709331005971,
+     "endTime": 1709331005978
+    },
+    "executionOrder": 2,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "",
+   "languageId": "wolfram",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  }
+ ]
+}
