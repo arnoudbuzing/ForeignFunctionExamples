@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     81597,       1894]
-NotebookOptionsPosition[     74680,       1768]
-NotebookOutlinePosition[     75076,       1784]
-CellTagsIndexPosition[     75033,       1781]
+NotebookDataLength[     78388,       1824]
+NotebookOptionsPosition[     71140,       1692]
+NotebookOutlinePosition[     71536,       1708]
+CellTagsIndexPosition[     71493,       1705]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,14 +32,37 @@ Cell[BoxData[
  RowBox[{"SetDirectory", "[", 
   RowBox[{"ParentDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.918560866195207*^9, 3.918560874190699*^9}, {
   3.918561054874606*^9, 3.91856105983805*^9}},
- CellLabel->"In[11]:=",ExpressionUUID->"bec5555a-67fb-44e0-bf20-cc9fa3e6636e"],
+ CellLabel->"In[82]:=",ExpressionUUID->"bec5555a-67fb-44e0-bf20-cc9fa3e6636e"],
 
 Cell[BoxData["\<\"/Users/arnoudb/ForeignFunctionExamples\"\>"], "Output",
- CellChangeTimes->{3.918560874733162*^9, 3.9185610601319733`*^9, 
-  3.918562963347767*^9},
- CellLabel->"Out[11]=",ExpressionUUID->"ddc98348-2e30-4bfa-8189-75246a55af46"]
+ CellChangeTimes->{
+  3.918560874733162*^9, 3.9185610601319733`*^9, 3.918562963347767*^9, {
+   3.9187288624219227`*^9, 3.918728882816351*^9}, 3.918737616180204*^9},
+ CellLabel->"Out[82]=",ExpressionUUID->"089c8b8f-81a9-41da-81df-64c103743deb"]
+}, Open  ]],
+
+Cell["A point is a list of two reals:", "Text",
+ CellChangeTimes->{{3.918728983217548*^9, 
+  3.9187289901582613`*^9}},ExpressionUUID->"93d37b39-51d4-411f-a412-\
+ed265ddb8095"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"POINT", "=", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.918728947500101*^9, 3.918728954939721*^9}},
+ CellLabel->"In[83]:=",ExpressionUUID->"27c5883e-7483-4b71-b081-a5601c1e3bfa"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Real64\"\>", ",", "\<\"Real64\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.918728955847787*^9, 3.918737616221575*^9},
+ CellLabel->"Out[83]=",ExpressionUUID->"4e98aece-e904-4711-80e8-a88f4c37a528"]
 }, Open  ]],
 
 Cell["Add two points:", "Text",
@@ -55,16 +78,11 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<add\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
-     RowBox[{"{", 
-      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+      RowBox[{"POINT", ",", "POINT"}], "}"}], "->", "POINT"}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.918564349268868*^9, 3.918564352737274*^9}},
- CellLabel->"In[28]:=",ExpressionUUID->"21e9a834-aa66-45c9-8d60-829c2315e403"],
+ CellChangeTimes->{{3.918564349268868*^9, 3.918564352737274*^9}, {
+  3.918728959107417*^9, 3.9187289689604187`*^9}},
+ CellLabel->"In[84]:=",ExpressionUUID->"21e9a834-aa66-45c9-8d60-829c2315e403"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -98,15 +116,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -145,15 +160,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}, {
                RowBox[{
@@ -180,17 +192,14 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "add", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690596], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
-      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918564354026252*^9},
- CellLabel->"Out[28]=",ExpressionUUID->"380a2090-60a6-444f-a9b8-4421da28d60a"]
+ CellChangeTimes->{
+  3.918564354026252*^9, {3.918728862874662*^9, 3.918728882850521*^9}, 
+   3.918728970282631*^9, 3.91873761784585*^9},
+ CellLabel->"Out[84]=",ExpressionUUID->"157cd823-d362-4702-ac33-85468b337623"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -203,13 +212,15 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"5", ",", "7"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.918564354661026*^9, 3.918564362515856*^9}},
- CellLabel->"In[29]:=",ExpressionUUID->"52227032-6871-48c9-a625-5475e6f5b83e"],
+ CellLabel->"In[42]:=",ExpressionUUID->"52227032-6871-48c9-a625-5475e6f5b83e"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"7.`", ",", "10.`"}], "}"}]], "Output",
- CellChangeTimes->{3.918564362873988*^9},
- CellLabel->"Out[29]=",ExpressionUUID->"ff9b7070-9470-484d-a7e7-a10a4c0f570d"]
+ CellChangeTimes->{
+  3.918564362873988*^9, {3.9187288644408607`*^9, 3.918728882855891*^9}, 
+   3.918728971300572*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"68ff336d-fe04-47b6-90d3-070836aa6364"]
 }, Open  ]],
 
 Cell["Subtract two points:", "Text",
@@ -225,16 +236,11 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<subtract\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
-     RowBox[{"{", 
-      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+      RowBox[{"POINT", ",", "POINT"}], "}"}], "->", "POINT"}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.9185644058081627`*^9, 3.918564411429943*^9}},
- CellLabel->"In[30]:=",ExpressionUUID->"3043372a-dd28-4f59-99ac-0bfa9c16e4bf"],
+ CellChangeTimes->{{3.9185644058081627`*^9, 3.918564411429943*^9}, {
+  3.918728999014666*^9, 3.918729017269032*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"3043372a-dd28-4f59-99ac-0bfa9c16e4bf"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -268,15 +274,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -315,15 +318,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}, {
                RowBox[{
@@ -350,17 +350,14 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "subtract", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690664], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
-      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918564412019971*^9},
- CellLabel->"Out[30]=",ExpressionUUID->"08fd3dbc-fc32-4fd2-ba19-a02921528241"]
+ CellChangeTimes->{
+  3.918564412019971*^9, {3.918728865803875*^9, 3.9187288828726597`*^9}, 
+   3.918729017915844*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"3dee16f9-6060-4c13-b4e5-733d6a92f88e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -373,13 +370,14 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"2", ",", "3"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.918564397044106*^9, 3.918564420014471*^9}},
- CellLabel->"In[32]:=",ExpressionUUID->"af24c983-e1ce-40a1-82cc-930aa998565b"],
+ CellLabel->"In[44]:=",ExpressionUUID->"af24c983-e1ce-40a1-82cc-930aa998565b"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"3.`", ",", "4.`"}], "}"}]], "Output",
- CellChangeTimes->{{3.918564412983519*^9, 3.918564420668901*^9}},
- CellLabel->"Out[32]=",ExpressionUUID->"2d1e6f2a-3e9a-4382-99d6-a68ea5b09eb5"]
+ CellChangeTimes->{{3.918564412983519*^9, 3.918564420668901*^9}, {
+   3.918728867941839*^9, 3.918728882879745*^9}, 3.918729018755302*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"59d8613a-b2f1-4e2f-a10a-678b1a4d74d2"]
 }, Open  ]],
 
 Cell["Scale a point by a factor:", "Text",
@@ -395,15 +393,11 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<scale\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       "\"\<Real64\>\""}], "}"}], "->", 
-     RowBox[{"{", 
-      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+      RowBox[{"POINT", ",", "\"\<Real64\>\""}], "}"}], "->", "POINT"}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.9185644439976807`*^9, 3.918564454019568*^9}},
- CellLabel->"In[33]:=",ExpressionUUID->"c960b3e5-54a9-4250-b3e1-370361b7ce93"],
+ CellChangeTimes->{{3.9185644439976807`*^9, 3.918564454019568*^9}, {
+  3.9187290231173697`*^9, 3.918729027155732*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"c960b3e5-54a9-4250-b3e1-370361b7ce93"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -437,12 +431,10 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
                     "\"Real64\""}], "}"}], "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -481,12 +473,10 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
                     "\"Real64\""}], "}"}], "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}, {
                RowBox[{
@@ -513,16 +503,14 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "scale", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690732], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], "Real64"} -> 
-      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918564454616425*^9},
- CellLabel->"Out[33]=",ExpressionUUID->"951fae02-b123-48ad-a168-0a707c89922a"]
+ CellChangeTimes->{
+  3.918564454616425*^9, {3.918728869838593*^9, 3.9187288828935738`*^9}, 
+   3.918729027604578*^9},
+ CellLabel->"Out[45]=",ExpressionUUID->"6736e27e-9f70-4e62-a169-509f947c633e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -533,13 +521,15 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"3", ",", "4"}], "}"}], ",", "2"}], "]"}]], "Input",
  CellChangeTimes->{{3.9185644557795677`*^9, 3.9185644584413548`*^9}},
- CellLabel->"In[34]:=",ExpressionUUID->"8ae6f8c9-4ca7-4643-b07d-6dab12290499"],
+ CellLabel->"In[46]:=",ExpressionUUID->"8ae6f8c9-4ca7-4643-b07d-6dab12290499"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"6.`", ",", "8.`"}], "}"}]], "Output",
- CellChangeTimes->{3.918564458679287*^9},
- CellLabel->"Out[34]=",ExpressionUUID->"b9ad4b57-ee22-4a36-ac09-3031dc1879e0"]
+ CellChangeTimes->{
+  3.918564458679287*^9, {3.918728870745977*^9, 3.918728882897829*^9}, 
+   3.91872902832205*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"69a0c96e-08ad-4dd7-8da4-a80c0995dd25"]
 }, Open  ]],
 
 Cell["Compute the distance between two points:", "Text",
@@ -556,16 +546,13 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<distance\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], 
-     "\[Rule]", "\"\<Real64\>\""}]}], "]"}]}]], "Input",
+      RowBox[{"POINT", ",", "POINT"}], "}"}], "\[Rule]", "\"\<Real64\>\""}]}],
+    "]"}]}]], "Input",
  CellChangeTimes->{{3.918299159489606*^9, 3.918299180702124*^9}, {
   3.918299238532871*^9, 3.918299241696148*^9}, {3.918299531390029*^9, 
-  3.918299544583302*^9}, {3.9185612330925083`*^9, 3.918561233839891*^9}},
- CellLabel->"In[35]:=",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
+  3.918299544583302*^9}, {3.9185612330925083`*^9, 3.918561233839891*^9}, {
+  3.918729032447835*^9, 3.918729037730277*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -599,11 +586,9 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", "\"Real64\""}], "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -642,11 +627,9 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", "\"Real64\""}], "SummaryItem"]}]}, {
                RowBox[{
@@ -673,11 +656,7 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "distance", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690332], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> "Real64")}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
@@ -685,8 +664,9 @@ Cell[BoxData[
    3.918299248149634*^9, 3.918299408617529*^9, 3.918299544991254*^9, 
    3.918299586538293*^9, 3.9183008108708572`*^9, 3.918303055715489*^9, 
    3.9185612358332233`*^9, 3.9185629722438297`*^9, 3.9185635593185873`*^9, 
-   3.918564481827695*^9},
- CellLabel->"Out[35]=",ExpressionUUID->"ab273631-fb1a-4ab3-b154-34f6f1963a62"]
+   3.918564481827695*^9, {3.918728873360902*^9, 3.9187288829113607`*^9}, 
+   3.9187290382630377`*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"f1b833b1-1d12-40be-a1c8-1a52650f7120"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -701,14 +681,16 @@ Cell[BoxData[
  CellChangeTimes->{{3.91829916968701*^9, 3.9182991739515877`*^9}, {
   3.918299253356166*^9, 3.918299259392854*^9}, {3.918563564030858*^9, 
   3.9185635676928587`*^9}, {3.918564523718822*^9, 3.918564526750815*^9}},
- CellLabel->"In[37]:=",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
+ CellLabel->"In[48]:=",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
 
 Cell[BoxData["5.`"], "Output",
- CellChangeTimes->{3.9182991742509823`*^9, 3.918299251132971*^9, 
-  3.918299409431737*^9, 3.918299546836718*^9, 3.918299587512335*^9, 
-  3.918300811985398*^9, 3.918303056450131*^9, 3.918561237490841*^9, 
-  3.918562976122237*^9, 3.918563567924193*^9, 3.9185645269492683`*^9},
- CellLabel->"Out[37]=",ExpressionUUID->"b69cbf29-b568-4cbf-8c60-4f6211a9af18"]
+ CellChangeTimes->{
+  3.9182991742509823`*^9, 3.918299251132971*^9, 3.918299409431737*^9, 
+   3.918299546836718*^9, 3.918299587512335*^9, 3.918300811985398*^9, 
+   3.918303056450131*^9, 3.918561237490841*^9, 3.918562976122237*^9, 
+   3.918563567924193*^9, 3.9185645269492683`*^9, {3.9187288740172453`*^9, 
+   3.918728882915797*^9}, 3.9187290390580606`*^9},
+ CellLabel->"Out[48]=",ExpressionUUID->"b2e6a533-78f2-4640-a7cc-9b67e0327ce3"]
 }, Open  ]],
 
 Cell["Compute the norm of a point:", "Text",
@@ -723,13 +705,12 @@ Cell[BoxData[
   RowBox[{"ForeignFunctionLoad", "[", 
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<norm\>\"", ",", 
     RowBox[{
-     RowBox[{"{", 
-      RowBox[{"{", 
-       RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], "}"}], "->", 
-     "\"\<Real64\>\""}]}], "]"}]}]], "Input",
+     RowBox[{"{", "POINT", "}"}], "->", "\"\<Real64\>\""}]}], 
+   "]"}]}]], "Input",
  CellChangeTimes->{{3.918300829961851*^9, 3.918300880041003*^9}, {
-  3.918561242767956*^9, 3.918561245894396*^9}},
- CellLabel->"In[17]:=",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
+  3.918561242767956*^9, 3.918561245894396*^9}, {3.918729043635269*^9, 
+  3.918729044420231*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -762,8 +743,7 @@ Cell[BoxData[
                  TagBox[
                   RowBox[{
                     RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], "}"}], 
                     "\[Rule]", "\"Real64\""}], "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -801,8 +781,7 @@ Cell[BoxData[
                  TagBox[
                   RowBox[{
                     RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], "}"}], 
                     "\[Rule]", "\"Real64\""}], "SummaryItem"]}]}, {
                RowBox[{
@@ -829,16 +808,14 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "norm", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690424], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> "Real64")}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{{3.918300836329649*^9, 3.9183008803330317`*^9}, 
-   3.918561246605747*^9, 3.9185629853742657`*^9},
- CellLabel->"Out[17]=",ExpressionUUID->"089c4c54-2bfa-4b3b-8539-4ad127212486"]
+   3.918561246605747*^9, 3.9185629853742657`*^9, {3.918728875484786*^9, 
+   3.918728882929933*^9}, 3.9187290450304327`*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"268dafee-1e3c-4383-b38b-e4668057b1f8"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -849,12 +826,13 @@ Cell[BoxData[
    RowBox[{"3", ",", "4"}], "}"}], "]"}]], "Input",
  CellChangeTimes->{{3.9183008617138453`*^9, 3.918300869283001*^9}, {
   3.918564509920225*^9, 3.9185645100738277`*^9}},
- CellLabel->"In[38]:=",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
+ CellLabel->"In[50]:=",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
 
 Cell[BoxData["5.`"], "Output",
  CellChangeTimes->{{3.91830086991719*^9, 3.918300881006831*^9}, 
-   3.918562986188971*^9, {3.918564510732609*^9, 3.9185645289295197`*^9}},
- CellLabel->"Out[38]=",ExpressionUUID->"5cbfdfb3-f1b1-4477-821b-ae48d73c3e0c"]
+   3.918562986188971*^9, {3.918564510732609*^9, 3.9185645289295197`*^9}, {
+   3.918728877577508*^9, 3.9187288829355383`*^9}, 3.918729046747068*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"ea56e07a-f53a-468c-b4c7-dac0f02191c4"]
 }, Open  ]],
 
 Cell["Compute the dot product of two points:", "Text",
@@ -870,15 +848,12 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<dot\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], 
-     "->", "\"\<Real64\>\""}]}], "]"}]}]], "Input",
+      RowBox[{"POINT", ",", "POINT"}], "}"}], "->", "\"\<Real64\>\""}]}], 
+   "]"}]}]], "Input",
  CellChangeTimes->{{3.9183008989693217`*^9, 3.918300917010476*^9}, {
-  3.918561257663917*^9, 3.918561258508628*^9}},
- CellLabel->"In[39]:=",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
+  3.918561257663917*^9, 3.918561258508628*^9}, {3.9187290505633574`*^9, 
+  3.918729054405982*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -912,11 +887,9 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", "\"Real64\""}], "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -955,11 +928,9 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", "\"Real64\""}], "SummaryItem"]}]}, {
                RowBox[{
@@ -986,17 +957,15 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "dot", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690492], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> "Real64")}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918300917346493*^9, 3.918561258897223*^9, 
-  3.9185629897664127`*^9, 3.9185645420317173`*^9},
- CellLabel->"Out[39]=",ExpressionUUID->"99f8cacb-315f-4055-9cf9-b2e7548653a0"]
+ CellChangeTimes->{
+  3.918300917346493*^9, 3.918561258897223*^9, 3.9185629897664127`*^9, 
+   3.9185645420317173`*^9, {3.918728878668284*^9, 3.9187288829514713`*^9}, 
+   3.918729055225086*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"1f1ad789-af66-4a8a-ae62-ecb4c4243224"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1011,13 +980,14 @@ Cell[BoxData[
      RowBox[{"-", "3"}], ",", "4"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.918300918386117*^9, 3.918300921576642*^9}, {
   3.918564548286787*^9, 3.918564565305579*^9}},
- CellLabel->"In[41]:=",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
+ CellLabel->"In[52]:=",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
 
 Cell[BoxData["7.`"], "Output",
  CellChangeTimes->{
   3.918300921932797*^9, 3.918561260745677*^9, 3.918562990741366*^9, {
-   3.918564542693136*^9, 3.918564565501088*^9}},
- CellLabel->"Out[41]=",ExpressionUUID->"682d4cc3-c1f2-4249-b017-6faeb8ea17c4"]
+   3.918564542693136*^9, 3.918564565501088*^9}, {3.918728879753985*^9, 
+   3.9187288829557343`*^9}, 3.918729055913313*^9},
+ CellLabel->"Out[52]=",ExpressionUUID->"8410ccd9-d300-4ec0-b51a-f615051061ef"]
 }, Open  ]],
 
 Cell["Normalize a point to unit length:", "Text",
@@ -1032,16 +1002,11 @@ Cell[BoxData[
   RowBox[{"ForeignFunctionLoad", "[", 
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<normalize\>\"", ",", 
     RowBox[{
-     RowBox[{"{", 
-      RowBox[{"{", 
-       RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], "}"}], "->", 
-     
-     RowBox[{"{", 
-      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
-   "]"}]}]], "Input",
+     RowBox[{"{", "POINT", "}"}], "->", "POINT"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.918564605224956*^9, 3.918564614929367*^9}, {
-  3.91856464535385*^9, 3.9185646706425867`*^9}},
- CellLabel->"In[47]:=",ExpressionUUID->"145d2f7a-d9f7-4500-9a57-9d526df84c5c"],
+  3.91856464535385*^9, 3.9185646706425867`*^9}, {3.918729059841876*^9, 
+  3.918729064162815*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"145d2f7a-d9f7-4500-9a57-9d526df84c5c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1074,12 +1039,10 @@ Cell[BoxData[
                  TagBox[
                   RowBox[{
                     RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], "}"}], 
                     "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -1117,12 +1080,10 @@ Cell[BoxData[
                  TagBox[
                   RowBox[{
                     RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], "}"}], 
                     "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}, {
                RowBox[{
@@ -1149,16 +1110,13 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "normalize", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690796], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
-      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{{3.918564616217805*^9, 3.9185646711980658`*^9}},
- CellLabel->"Out[47]=",ExpressionUUID->"0e04e603-3b84-4a6d-af9b-7515b5914e0a"]
+ CellChangeTimes->{{3.918564616217805*^9, 3.9185646711980658`*^9}, {
+   3.918728881121853*^9, 3.918728882970532*^9}, 3.9187290649919157`*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"8bbfac8e-75a5-4098-a59c-4ab2e1842f0d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1168,13 +1126,14 @@ Cell[BoxData[
   RowBox[{"{", 
    RowBox[{"3", ",", "4"}], "}"}], "]"}]], "Input",
  CellChangeTimes->{{3.918564617358143*^9, 3.918564619472535*^9}},
- CellLabel->"In[48]:=",ExpressionUUID->"2e59f69e-0b60-4899-8875-a4cb76093818"],
+ CellLabel->"In[54]:=",ExpressionUUID->"2e59f69e-0b60-4899-8875-a4cb76093818"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"0.6000000000000001`", ",", "0.8`"}], "}"}]], "Output",
- CellChangeTimes->{{3.918564619867532*^9, 3.918564672949595*^9}},
- CellLabel->"Out[48]=",ExpressionUUID->"5798f501-6791-4e07-b006-b3d12657e55b"]
+ CellChangeTimes->{{3.918564619867532*^9, 3.918564672949595*^9}, 
+   3.918728882974718*^9, 3.9187290659585648`*^9},
+ CellLabel->"Out[54]=",ExpressionUUID->"e6bb4d7d-6c0f-411d-b3d0-30e43a2a4687"]
 }, Open  ]],
 
 Cell["Rotate a point by an angle:", "Text",
@@ -1190,15 +1149,11 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<rotate\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       "\"\<Real64\>\""}], "}"}], "->", 
-     RowBox[{"{", 
-      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+      RowBox[{"POINT", ",", "\"\<Real64\>\""}], "}"}], "->", "POINT"}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.9185647409288597`*^9, 3.918564752767089*^9}},
- CellLabel->"In[50]:=",ExpressionUUID->"7aa3d446-00c1-4706-9ce7-48de915bee73"],
+ CellChangeTimes->{{3.9185647409288597`*^9, 3.918564752767089*^9}, {
+  3.918729069567321*^9, 3.918729073355249*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"7aa3d446-00c1-4706-9ce7-48de915bee73"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1232,12 +1187,10 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
                     "\"Real64\""}], "}"}], "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -1276,12 +1229,10 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
                     "\"Real64\""}], "}"}], "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}, {
                RowBox[{
@@ -1308,16 +1259,13 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "rotate", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801690976], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], "Real64"} -> 
-      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918564753442011*^9},
- CellLabel->"Out[50]=",ExpressionUUID->"21ebd958-f0d7-4ac2-a3b3-add35c59bcf6"]
+ CellChangeTimes->{3.918564753442011*^9, 3.9187288829890614`*^9, 
+  3.918729073735111*^9},
+ CellLabel->"Out[55]=",ExpressionUUID->"94cd9cd9-cd33-435a-b229-fc90e8c98203"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1329,14 +1277,15 @@ Cell[BoxData[
     RowBox[{"1", ",", "0"}], "}"}], ",", 
    RowBox[{"\[Pi]", "/", "4."}]}], "]"}]], "Input",
  CellChangeTimes->{{3.918564754393935*^9, 3.91856476405064*^9}},
- CellLabel->"In[52]:=",ExpressionUUID->"22d580c3-4034-49fa-80a5-0e5ee4f6f71a"],
+ CellLabel->"In[56]:=",ExpressionUUID->"22d580c3-4034-49fa-80a5-0e5ee4f6f71a"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"0.7071067811865476`", ",", "0.7071067811865475`"}], 
   "}"}]], "Output",
- CellChangeTimes->{{3.918564761524455*^9, 3.918564764379425*^9}},
- CellLabel->"Out[52]=",ExpressionUUID->"c154e85b-beac-4936-92b1-bb6ebc4cf2c6"]
+ CellChangeTimes->{{3.918564761524455*^9, 3.918564764379425*^9}, 
+   3.918728882994711*^9, 3.9187290753410883`*^9},
+ CellLabel->"Out[56]=",ExpressionUUID->"1cb515b8-2980-4b3d-94c3-0603b608d33d"]
 }, Open  ]],
 
 Cell["Reflect a point about a normal:", "Text",
@@ -1352,16 +1301,11 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<reflect\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
-     RowBox[{"{", 
-      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+      RowBox[{"POINT", ",", "POINT"}], "}"}], "->", "POINT"}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.918564797159787*^9, 3.918564808804729*^9}},
- CellLabel->"In[53]:=",ExpressionUUID->"35555350-9142-4eb0-9937-f9f416c85456"],
+ CellChangeTimes->{{3.918564797159787*^9, 3.918564808804729*^9}, {
+  3.918729078249565*^9, 3.918729088366519*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"35555350-9142-4eb0-9937-f9f416c85456"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1395,15 +1339,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -1442,15 +1383,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}, {
                RowBox[{
@@ -1477,17 +1415,13 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "reflect", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801691148], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
-      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918564809473859*^9},
- CellLabel->"Out[53]=",ExpressionUUID->"76861c77-3831-47ea-ac98-990d19364c98"]
+ CellChangeTimes->{3.918564809473859*^9, 3.91872888300819*^9, 
+  3.918729088818296*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"401dccba-52c1-40ee-8311-46ff38cd63a7"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1501,15 +1435,16 @@ Cell[BoxData[
     RowBox[{"0.7071067811865476`", ",", "0.7071067811865475`"}], "}"}]}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.918564810238101*^9, 3.9185648395577927`*^9}},
- CellLabel->"In[57]:=",ExpressionUUID->"40102816-ef57-473c-ba53-bd568a89e659"],
+ CellLabel->"In[58]:=",ExpressionUUID->"40102816-ef57-473c-ba53-bd568a89e659"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
    RowBox[{"-", "2.220446049250313`*^-16"}], ",", 
    RowBox[{"-", "1.`"}]}], "}"}]], "Output",
- CellChangeTimes->{{3.9185648219477262`*^9, 3.918564840099043*^9}},
- CellLabel->"Out[57]=",ExpressionUUID->"0d29f3c4-7c04-48bb-b868-c289ecc42527"]
+ CellChangeTimes->{{3.9185648219477262`*^9, 3.918564840099043*^9}, 
+   3.9187288830124817`*^9, 3.9187290907672663`*^9},
+ CellLabel->"Out[58]=",ExpressionUUID->"8905225d-02f7-4f68-8b29-0ed5980ae2b1"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1524,14 +1459,15 @@ Cell[BoxData[
   RowBox[{"{", 
    RowBox[{"1", ",", "0"}], "}"}], "]"}]], "Input",
  CellChangeTimes->{{3.918565532857731*^9, 3.918565592719246*^9}},
- CellLabel->"In[67]:=",ExpressionUUID->"1809f778-8a96-48cc-953f-7c4c1cff9844"],
+ CellLabel->"In[59]:=",ExpressionUUID->"1809f778-8a96-48cc-953f-7c4c1cff9844"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"0", ",", 
    RowBox[{"-", "1"}]}], "}"}]], "Output",
- CellChangeTimes->{{3.918565580997019*^9, 3.9185655934718313`*^9}},
- CellLabel->"Out[67]=",ExpressionUUID->"7d56d361-b54e-477f-983c-f362f792d36f"]
+ CellChangeTimes->{{3.918565580997019*^9, 3.9185655934718313`*^9}, 
+   3.918728883026516*^9, 3.918729092051607*^9},
+ CellLabel->"Out[59]=",ExpressionUUID->"2b292e1b-d283-4633-bde4-06f9eaa11cfe"]
 }, Open  ]],
 
 Cell["Project a point onto a normal:", "Text",
@@ -1547,16 +1483,11 @@ Cell[BoxData[
    RowBox[{"\"\<./build/point.dylib\>\"", ",", "\"\<project\>\"", ",", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}], "}"}], "->", 
-     RowBox[{"{", 
-      RowBox[{"\"\<Real64\>\"", ",", "\"\<Real64\>\""}], "}"}]}]}], 
+      RowBox[{"POINT", ",", "POINT"}], "}"}], "->", "POINT"}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.918564868548409*^9, 3.918564872024259*^9}},
- CellLabel->"In[58]:=",ExpressionUUID->"7d926e75-39a0-4559-b323-3a4ac13329c9"],
+ CellChangeTimes->{{3.918564868548409*^9, 3.918564872024259*^9}, {
+  3.918729096274436*^9, 3.918729104466403*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"7d926e75-39a0-4559-b323-3a4ac13329c9"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1590,15 +1521,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
@@ -1637,15 +1565,12 @@ Cell[BoxData[
                   RowBox[{
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}], ",", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], "}"}],
                      "\[Rule]", 
-                    RowBox[{
-                    RowBox[{"TypeSpecifier", "[", "\"ListTuple\"", "]"}], "[", 
+                    RowBox[{"\"ListTuple\"", "::[", 
                     RowBox[{"\"Real64\"", ",", "\"Real64\""}], "]"}]}], 
                   "SummaryItem"]}]}, {
                RowBox[{
@@ -1672,17 +1597,13 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   ForeignFunction[
   "/Users/arnoudb/ForeignFunctionExamples/build/point.dylib", "project", 
-   DataStructure[
-   "RawForeignFunction", {
-    "FunctionPointer" -> OpaqueRawPointer[4801691276], "Type" -> ({
-        TypeSpecifier["ListTuple"]["Real64", "Real64"], 
-        TypeSpecifier["ListTuple"]["Real64", "Real64"]} -> 
-      TypeSpecifier["ListTuple"]["Real64", "Real64"])}]],
+   DataStructure["RawForeignFunction", $Failed]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.918564872409026*^9},
- CellLabel->"Out[58]=",ExpressionUUID->"1dd80722-f27a-4681-ba39-dbb87c68e31d"]
+ CellChangeTimes->{3.918564872409026*^9, 3.9187288830405188`*^9, 
+  3.9187291048977423`*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"fc1017f7-3441-4b67-80dc-ae9f7ca09379"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1695,13 +1616,14 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"1", ",", "0"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.918564873304585*^9, 3.918564891834907*^9}},
- CellLabel->"In[60]:=",ExpressionUUID->"966f972c-6b57-47b0-bbc7-a4f3c3ad834f"],
+ CellLabel->"In[61]:=",ExpressionUUID->"966f972c-6b57-47b0-bbc7-a4f3c3ad834f"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"3.`", ",", "0.`"}], "}"}]], "Output",
- CellChangeTimes->{{3.918564884001996*^9, 3.918564892047948*^9}},
- CellLabel->"Out[60]=",ExpressionUUID->"335bc928-ea35-4ab1-b8b8-fa7108a68a77"]
+ CellChangeTimes->{{3.918564884001996*^9, 3.918564892047948*^9}, 
+   3.918728883045988*^9, 3.918729106496628*^9},
+ CellLabel->"Out[61]=",ExpressionUUID->"58270282-5311-40f6-886b-8b61d9955d63"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1714,13 +1636,14 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"0", ",", "1"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.918564873304585*^9, 3.9185649023432913`*^9}},
- CellLabel->"In[61]:=",ExpressionUUID->"de4aa7e4-e96e-41c4-a01d-23caa763741c"],
+ CellLabel->"In[62]:=",ExpressionUUID->"de4aa7e4-e96e-41c4-a01d-23caa763741c"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"0.`", ",", "4.`"}], "}"}]], "Output",
- CellChangeTimes->{3.918564902553587*^9},
- CellLabel->"Out[61]=",ExpressionUUID->"28643028-5c4a-49d5-832a-2101d048eb5e"]
+ CellChangeTimes->{3.918564902553587*^9, 3.918728883057887*^9, 
+  3.9187291070523*^9},
+ CellLabel->"Out[62]=",ExpressionUUID->"d69f1628-6d26-4185-8b14-bca7b4bd7142"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1733,14 +1656,15 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"1", ",", "1"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.918565493046193*^9, 3.918565498647902*^9}},
- CellLabel->"In[62]:=",ExpressionUUID->"915a6819-27b2-4d76-a61e-373d40619088"],
+ CellLabel->"In[63]:=",ExpressionUUID->"915a6819-27b2-4d76-a61e-373d40619088"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"3.499999999999999`", ",", "3.499999999999999`"}], "}"}]], "Output",\
 
- CellChangeTimes->{3.9185654992012978`*^9},
- CellLabel->"Out[62]=",ExpressionUUID->"b5105049-8a77-40ac-bd56-78767e212020"]
+ CellChangeTimes->{3.9185654992012978`*^9, 3.918728883061068*^9, 
+  3.918729107582621*^9},
+ CellLabel->"Out[63]=",ExpressionUUID->"72ea36da-e2ee-4f1d-b24e-c2cbc1a8c095"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1754,21 +1678,21 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{"1", ",", "1"}], "}"}]}], "]"}], "//", "N"}]], "Input",
  CellChangeTimes->{{3.918565508125958*^9, 3.9185655228488693`*^9}, {
-  3.918565613304208*^9, 
-  3.91856561645627*^9}},ExpressionUUID->"b12bef41-068a-48f1-823a-\
-809c6d4961b3"],
+  3.918565613304208*^9, 3.91856561645627*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"b12bef41-068a-48f1-823a-809c6d4961b3"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"3.5`", ",", "3.5`"}], "}"}]], "Output",
- CellChangeTimes->{{3.918565520246294*^9, 3.918565523032961*^9}},
- CellLabel->"Out[64]=",ExpressionUUID->"dc55bd51-56b8-4706-aff8-466ca74377f2"]
+ CellChangeTimes->{{3.918565520246294*^9, 3.918565523032961*^9}, 
+   3.9187288830732193`*^9, 3.9187291081911497`*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"5ce18f3c-08dc-4b16-a06a-1fea598a99a6"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1440, 847},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (February 28, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"0b0fa3f6-2245-4ed9-9ea0-eb5dcc3e5ed7"
 ]
@@ -1784,116 +1708,122 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 212, 4, 98, "Title",ExpressionUUID->"df67a117-7541-4742-96b3-0c261f4856df"],
+Cell[580, 22, 212, 4, 96, "Title",ExpressionUUID->"df67a117-7541-4742-96b3-0c261f4856df"],
 Cell[CellGroupData[{
-Cell[817, 30, 340, 6, 30, "Input",ExpressionUUID->"bec5555a-67fb-44e0-bf20-cc9fa3e6636e"],
-Cell[1160, 38, 243, 3, 34, "Output",ExpressionUUID->"ddc98348-2e30-4bfa-8189-75246a55af46"]
+Cell[817, 30, 367, 7, 45, "Input",ExpressionUUID->"bec5555a-67fb-44e0-bf20-cc9fa3e6636e",
+ InitializationCell->True],
+Cell[1187, 39, 317, 4, 33, "Output",ExpressionUUID->"089c8b8f-81a9-41da-81df-64c103743deb"]
 }, Open  ]],
-Cell[1418, 44, 157, 3, 35, "Text",ExpressionUUID->"f4767426-5a62-4f3b-b8b4-40703ea2d900"],
+Cell[1519, 46, 175, 3, 33, "Text",ExpressionUUID->"93d37b39-51d4-411f-a412-ed265ddb8095"],
 Cell[CellGroupData[{
-Cell[1600, 51, 640, 15, 30, "Input",ExpressionUUID->"21e9a834-aa66-45c9-8d60-829c2315e403"],
-Cell[2243, 68, 5851, 124, 61, "Output",ExpressionUUID->"380a2090-60a6-444f-a9b8-4421da28d60a"]
+Cell[1719, 53, 271, 5, 29, "Input",ExpressionUUID->"27c5883e-7483-4b71-b081-a5601c1e3bfa"],
+Cell[1993, 60, 242, 4, 33, "Output",ExpressionUUID->"4e98aece-e904-4711-80e8-a88f4c37a528"]
 }, Open  ]],
+Cell[2250, 67, 157, 3, 33, "Text",ExpressionUUID->"f4767426-5a62-4f3b-b8b4-40703ea2d900"],
 Cell[CellGroupData[{
-Cell[8131, 197, 322, 8, 30, "Input",ExpressionUUID->"52227032-6871-48c9-a625-5475e6f5b83e"],
-Cell[8456, 207, 199, 4, 34, "Output",ExpressionUUID->"ff9b7070-9470-484d-a7e7-a10a4c0f570d"]
-}, Open  ]],
-Cell[8670, 214, 162, 3, 35, "Text",ExpressionUUID->"e928e180-852a-460e-bde6-26521974a7ca"],
-Cell[CellGroupData[{
-Cell[8857, 221, 652, 15, 30, "Input",ExpressionUUID->"3043372a-dd28-4f59-99ac-0bfa9c16e4bf"],
-Cell[9512, 238, 5866, 124, 61, "Output",ExpressionUUID->"08fd3dbc-fc32-4fd2-ba19-a02921528241"]
+Cell[2432, 74, 458, 10, 29, "Input",ExpressionUUID->"21e9a834-aa66-45c9-8d60-829c2315e403"],
+Cell[2893, 86, 5373, 115, 58, "Output",ExpressionUUID->"157cd823-d362-4702-ac33-85468b337623"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15415, 367, 327, 8, 30, "Input",ExpressionUUID->"af24c983-e1ce-40a1-82cc-930aa998565b"],
-Cell[15745, 377, 222, 4, 34, "Output",ExpressionUUID->"2d1e6f2a-3e9a-4382-99d6-a68ea5b09eb5"]
+Cell[8303, 206, 322, 8, 29, "Input",ExpressionUUID->"52227032-6871-48c9-a625-5475e6f5b83e"],
+Cell[8628, 216, 276, 6, 33, "Output",ExpressionUUID->"68ff336d-fe04-47b6-90d3-070836aa6364"]
 }, Open  ]],
-Cell[15982, 384, 168, 3, 35, "Text",ExpressionUUID->"cac3e515-b95f-4fea-874a-bd36000ef667"],
+Cell[8919, 225, 162, 3, 33, "Text",ExpressionUUID->"e928e180-852a-460e-bde6-26521974a7ca"],
 Cell[CellGroupData[{
-Cell[16175, 391, 584, 14, 30, "Input",ExpressionUUID->"c960b3e5-54a9-4250-b3e1-370361b7ce93"],
-Cell[16762, 407, 5478, 117, 61, "Output",ExpressionUUID->"951fae02-b123-48ad-a168-0a707c89922a"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[22277, 529, 279, 6, 30, "Input",ExpressionUUID->"8ae6f8c9-4ca7-4643-b07d-6dab12290499"],
-Cell[22559, 537, 198, 4, 34, "Output",ExpressionUUID->"b9ad4b57-ee22-4a36-ac09-3031dc1879e0"]
-}, Open  ]],
-Cell[22772, 544, 237, 4, 35, "Text",ExpressionUUID->"15c1a4f0-99e2-491e-a69c-3258f7b28eb6"],
-Cell[CellGroupData[{
-Cell[23034, 552, 737, 15, 30, "Input",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
-Cell[23774, 569, 5721, 119, 61, "Output",ExpressionUUID->"ab273631-fb1a-4ab3-b154-34f6f1963a62"]
+Cell[9106, 232, 468, 10, 29, "Input",ExpressionUUID->"3043372a-dd28-4f59-99ac-0bfa9c16e4bf"],
+Cell[9577, 244, 5369, 115, 58, "Output",ExpressionUUID->"3dee16f9-6060-4c13-b4e5-733d6a92f88e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29532, 693, 474, 10, 30, "Input",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
-Cell[30009, 705, 384, 5, 34, "Output",ExpressionUUID->"b69cbf29-b568-4cbf-8c60-4f6211a9af18"]
+Cell[14983, 364, 327, 8, 29, "Input",ExpressionUUID->"af24c983-e1ce-40a1-82cc-930aa998565b"],
+Cell[15313, 374, 294, 5, 33, "Output",ExpressionUUID->"59d8613a-b2f1-4e2f-a10a-678b1a4d74d2"]
 }, Open  ]],
-Cell[30408, 713, 170, 3, 35, "Text",ExpressionUUID->"971fdf71-d06b-4265-a25d-a32d272acb4a"],
+Cell[15622, 382, 168, 3, 33, "Text",ExpressionUUID->"cac3e515-b95f-4fea-874a-bd36000ef667"],
 Cell[CellGroupData[{
-Cell[30603, 720, 515, 11, 30, "Input",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
-Cell[31121, 733, 5026, 107, 61, "Output",ExpressionUUID->"089c4c54-2bfa-4b3b-8539-4ad127212486"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[36184, 845, 302, 6, 30, "Input",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
-Cell[36489, 853, 248, 3, 34, "Output",ExpressionUUID->"5cbfdfb3-f1b1-4477-821b-ae48d73c3e0c"]
-}, Open  ]],
-Cell[36752, 859, 180, 3, 35, "Text",ExpressionUUID->"5ed12b0e-f0a7-43e5-a0a4-f77affd234c5"],
-Cell[CellGroupData[{
-Cell[36957, 866, 627, 14, 30, "Input",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
-Cell[37587, 882, 5509, 116, 61, "Output",ExpressionUUID->"99f8cacb-315f-4055-9cf9-b2e7548653a0"]
+Cell[15815, 389, 473, 10, 29, "Input",ExpressionUUID->"c960b3e5-54a9-4250-b3e1-370361b7ce93"],
+Cell[16291, 401, 5140, 111, 58, "Output",ExpressionUUID->"6736e27e-9f70-4e62-a169-509f947c633e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[43133, 1003, 392, 10, 30, "Input",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
-Cell[43528, 1015, 248, 4, 34, "Output",ExpressionUUID->"682d4cc3-c1f2-4249-b017-6faeb8ea17c4"]
+Cell[21468, 517, 279, 6, 29, "Input",ExpressionUUID->"8ae6f8c9-4ca7-4643-b07d-6dab12290499"],
+Cell[21750, 525, 272, 6, 33, "Output",ExpressionUUID->"69a0c96e-08ad-4dd7-8da4-a80c0995dd25"]
 }, Open  ]],
-Cell[43791, 1022, 179, 3, 35, "Text",ExpressionUUID->"a0548dce-60d3-4ead-9f71-02641b7b9e2d"],
+Cell[22037, 534, 237, 4, 33, "Text",ExpressionUUID->"15c1a4f0-99e2-491e-a69c-3258f7b28eb6"],
 Cell[CellGroupData[{
-Cell[43995, 1029, 596, 14, 30, "Input",ExpressionUUID->"145d2f7a-d9f7-4500-9a57-9d526df84c5c"],
-Cell[44594, 1045, 5406, 115, 61, "Output",ExpressionUUID->"0e04e603-3b84-4a6d-af9b-7515b5914e0a"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[50037, 1165, 254, 5, 30, "Input",ExpressionUUID->"2e59f69e-0b60-4899-8875-a4cb76093818"],
-Cell[50294, 1172, 239, 4, 34, "Output",ExpressionUUID->"5798f501-6791-4e07-b006-b3d12657e55b"]
-}, Open  ]],
-Cell[50548, 1179, 169, 3, 35, "Text",ExpressionUUID->"5c9805c5-5960-4abb-9aec-d16abbe4d004"],
-Cell[CellGroupData[{
-Cell[50742, 1186, 586, 14, 30, "Input",ExpressionUUID->"7aa3d446-00c1-4706-9ce7-48de915bee73"],
-Cell[51331, 1202, 5481, 117, 61, "Output",ExpressionUUID->"21ebd958-f0d7-4ac2-a3b3-add35c59bcf6"]
+Cell[22299, 542, 626, 12, 29, "Input",ExpressionUUID->"a978af38-c17c-45b7-ba08-ba4ea8987a4f"],
+Cell[22928, 556, 5380, 112, 58, "Output",ExpressionUUID->"f1b833b1-1d12-40be-a1c8-1a52650f7120"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[56849, 1324, 304, 7, 30, "Input",ExpressionUUID->"22d580c3-4034-49fa-80a5-0e5ee4f6f71a"],
-Cell[57156, 1333, 257, 5, 34, "Output",ExpressionUUID->"c154e85b-beac-4936-92b1-bb6ebc4cf2c6"]
+Cell[28345, 673, 474, 10, 29, "Input",ExpressionUUID->"05158f4c-552e-46b8-b69e-9f560b90c79d"],
+Cell[28822, 685, 466, 7, 33, "Output",ExpressionUUID->"b2e6a533-78f2-4640-a7cc-9b67e0327ce3"]
 }, Open  ]],
-Cell[57428, 1341, 175, 3, 35, "Text",ExpressionUUID->"ee16f56f-2ee4-46dd-98c4-2493a47770d9"],
+Cell[29303, 695, 170, 3, 33, "Text",ExpressionUUID->"971fdf71-d06b-4265-a25d-a32d272acb4a"],
 Cell[CellGroupData[{
-Cell[57628, 1348, 648, 15, 30, "Input",ExpressionUUID->"35555350-9142-4eb0-9937-f9f416c85456"],
-Cell[58279, 1365, 5863, 124, 61, "Output",ExpressionUUID->"76861c77-3831-47ea-ac98-990d19364c98"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[64179, 1494, 367, 9, 30, "Input",ExpressionUUID->"40102816-ef57-473c-ba53-bd568a89e659"],
-Cell[64549, 1505, 282, 6, 37, "Output",ExpressionUUID->"0d29f3c4-7c04-48bb-b868-c289ecc42527"]
+Cell[29498, 702, 485, 10, 29, "Input",ExpressionUUID->"63f2e694-928d-4f15-a7b9-829a10b79222"],
+Cell[29986, 714, 4852, 103, 58, "Output",ExpressionUUID->"268dafee-1e3c-4383-b38b-e4668057b1f8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[64868, 1516, 409, 10, 30, "Input",ExpressionUUID->"1809f778-8a96-48cc-953f-7c4c1cff9844"],
-Cell[65280, 1528, 239, 5, 34, "Output",ExpressionUUID->"7d56d361-b54e-477f-983c-f362f792d36f"]
+Cell[34875, 822, 302, 6, 29, "Input",ExpressionUUID->"4c0136de-2fd4-488b-bf0d-e17f89bc7ebe"],
+Cell[35180, 830, 322, 4, 33, "Output",ExpressionUUID->"ea56e07a-f53a-468c-b4c7-dac0f02191c4"]
 }, Open  ]],
-Cell[65534, 1536, 174, 3, 35, "Text",ExpressionUUID->"847dc46a-b479-4413-8852-eea6fd689d18"],
+Cell[35517, 837, 180, 3, 33, "Text",ExpressionUUID->"5ed12b0e-f0a7-43e5-a0a4-f77affd234c5"],
 Cell[CellGroupData[{
-Cell[65733, 1543, 648, 15, 30, "Input",ExpressionUUID->"7d926e75-39a0-4559-b323-3a4ac13329c9"],
-Cell[66384, 1560, 5863, 124, 61, "Output",ExpressionUUID->"1dd80722-f27a-4681-ba39-dbb87c68e31d"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[72284, 1689, 326, 8, 30, "Input",ExpressionUUID->"966f972c-6b57-47b0-bbc7-a4f3c3ad834f"],
-Cell[72613, 1699, 222, 4, 34, "Output",ExpressionUUID->"335bc928-ea35-4ab1-b8b8-fa7108a68a77"]
+Cell[35722, 844, 518, 11, 29, "Input",ExpressionUUID->"098b8bef-338d-42a0-b435-12498957e56e"],
+Cell[36243, 857, 5170, 110, 58, "Output",ExpressionUUID->"1f1ad789-af66-4a8a-ae62-ecb4c4243224"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[72872, 1708, 328, 8, 30, "Input",ExpressionUUID->"de4aa7e4-e96e-41c4-a01d-23caa763741c"],
-Cell[73203, 1718, 198, 4, 34, "Output",ExpressionUUID->"28643028-5c4a-49d5-832a-2101d048eb5e"]
+Cell[41450, 972, 392, 10, 29, "Input",ExpressionUUID->"e745aa90-c8f3-4e26-b788-e6d19e5c1d12"],
+Cell[41845, 984, 322, 5, 33, "Output",ExpressionUUID->"8410ccd9-d300-4ec0-b51a-f615051061ef"]
+}, Open  ]],
+Cell[42182, 992, 179, 3, 33, "Text",ExpressionUUID->"a0548dce-60d3-4ead-9f71-02641b7b9e2d"],
+Cell[CellGroupData[{
+Cell[42386, 999, 483, 9, 29, "Input",ExpressionUUID->"145d2f7a-d9f7-4500-9a57-9d526df84c5c"],
+Cell[42872, 1010, 5075, 108, 58, "Output",ExpressionUUID->"8bbfac8e-75a5-4098-a59c-4ab2e1842f0d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[73438, 1727, 326, 8, 30, "Input",ExpressionUUID->"915a6819-27b2-4d76-a61e-373d40619088"],
-Cell[73767, 1737, 232, 5, 34, "Output",ExpressionUUID->"b5105049-8a77-40ac-bd56-78767e212020"]
+Cell[47984, 1123, 254, 5, 29, "Input",ExpressionUUID->"2e59f69e-0b60-4899-8875-a4cb76093818"],
+Cell[48241, 1130, 289, 5, 33, "Output",ExpressionUUID->"e6bb4d7d-6c0f-411d-b3d0-30e43a2a4687"]
+}, Open  ]],
+Cell[48545, 1138, 169, 3, 33, "Text",ExpressionUUID->"5c9805c5-5960-4abb-9aec-d16abbe4d004"],
+Cell[CellGroupData[{
+Cell[48739, 1145, 473, 10, 29, "Input",ExpressionUUID->"7aa3d446-00c1-4706-9ce7-48de915bee73"],
+Cell[49215, 1157, 5115, 110, 58, "Output",ExpressionUUID->"94cd9cd9-cd33-435a-b229-fc90e8c98203"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[74036, 1747, 389, 11, 30, "Input",ExpressionUUID->"b12bef41-068a-48f1-823a-809c6d4961b3"],
-Cell[74428, 1760, 224, 4, 34, "Output",ExpressionUUID->"dc55bd51-56b8-4706-aff8-466ca74377f2"]
+Cell[54367, 1272, 304, 7, 29, "Input",ExpressionUUID->"22d580c3-4034-49fa-80a5-0e5ee4f6f71a"],
+Cell[54674, 1281, 307, 6, 33, "Output",ExpressionUUID->"1cb515b8-2980-4b3d-94c3-0603b608d33d"]
+}, Open  ]],
+Cell[54996, 1290, 175, 3, 33, "Text",ExpressionUUID->"ee16f56f-2ee4-46dd-98c4-2493a47770d9"],
+Cell[CellGroupData[{
+Cell[55196, 1297, 464, 10, 29, "Input",ExpressionUUID->"35555350-9142-4eb0-9937-f9f416c85456"],
+Cell[55663, 1309, 5335, 114, 58, "Output",ExpressionUUID->"401dccba-52c1-40ee-8311-46ff38cd63a7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[61035, 1428, 367, 9, 29, "Input",ExpressionUUID->"40102816-ef57-473c-ba53-bd568a89e659"],
+Cell[61405, 1439, 334, 7, 35, "Output",ExpressionUUID->"8905225d-02f7-4f68-8b29-0ed5980ae2b1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[61776, 1451, 409, 10, 29, "Input",ExpressionUUID->"1809f778-8a96-48cc-953f-7c4c1cff9844"],
+Cell[62188, 1463, 287, 6, 33, "Output",ExpressionUUID->"2b292e1b-d283-4633-bde4-06f9eaa11cfe"]
+}, Open  ]],
+Cell[62490, 1472, 174, 3, 33, "Text",ExpressionUUID->"847dc46a-b479-4413-8852-eea6fd689d18"],
+Cell[CellGroupData[{
+Cell[62689, 1479, 464, 10, 29, "Input",ExpressionUUID->"7d926e75-39a0-4559-b323-3a4ac13329c9"],
+Cell[63156, 1491, 5340, 114, 58, "Output",ExpressionUUID->"fc1017f7-3441-4b67-80dc-ae9f7ca09379"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68533, 1610, 326, 8, 29, "Input",ExpressionUUID->"966f972c-6b57-47b0-bbc7-a4f3c3ad834f"],
+Cell[68862, 1620, 270, 5, 33, "Output",ExpressionUUID->"58270282-5311-40f6-886b-8b61d9955d63"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69169, 1630, 328, 8, 29, "Input",ExpressionUUID->"de4aa7e4-e96e-41c4-a01d-23caa763741c"],
+Cell[69500, 1640, 243, 5, 33, "Output",ExpressionUUID->"d69f1628-6d26-4185-8b14-bca7b4bd7142"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69780, 1650, 326, 8, 29, "Input",ExpressionUUID->"915a6819-27b2-4d76-a61e-373d40619088"],
+Cell[70109, 1660, 279, 6, 33, "Output",ExpressionUUID->"72ea36da-e2ee-4f1d-b24e-c2cbc1a8c095"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70425, 1671, 408, 10, 29, "Input",ExpressionUUID->"b12bef41-068a-48f1-823a-809c6d4961b3"],
+Cell[70836, 1683, 276, 5, 33, "Output",ExpressionUUID->"5ce18f3c-08dc-4b16-a06a-1fea598a99a6"]
 }, Open  ]]
 }, Open  ]]
 }

@@ -8,7 +8,7 @@
 			"args": [
 				"-fcolor-diagnostics",
 				"-fansi-escape-codes",
-				"-g",
+				/* "-g", */
 				"${file}",
 				"-dynamiclib",
 				"-o",
